@@ -23,14 +23,16 @@
       	margin-top: 50px;
       }
       #wellcome{
-        margin-top: ;
         margin-bottom: 100px;
       }
       #projectsRow{
         margin-top: 50px;
         margin-bottom: 100px;
       }
-    
+      .marg{
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
       .bg-dark{
         background-color: #273036 !important; 
       }
@@ -42,6 +44,17 @@
       }
       .project{
         height: 200px;
+      }
+      .card-img-model{
+        height: 250px;
+        object-position: 50% 50%;
+        object-fit: cover;
+      }
+      .card:hover{
+       
+        background-color: rgba(0,0,0,0.3);
+        
+      
       }
     </style>
 
@@ -98,22 +111,25 @@
 
             <div class="col">
               <div class="card">
-                 <svg class="bd-placeholder-img square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                 <svg class="card-img-model square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
                 <div class="card-body">
                   <h5 class="card-title">Sem projeto</h5>
                   <p class="card-text">Pois é amigo, ainda não tem projeto aqui, quando tiver eu aviso</p>
+                    <a href="#" class="stretched-link">Ver no </a>
                 </div>
               </div>
             </div> 
 
              <div class="col">
               <div class="card">
-                 <svg class="bd-placeholder-img square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                 <svg class="card-img-model square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
                 <div class="card-body">
                  <h5 class="card-title">Sem projeto</h5>
                   <p class="card-text">Pois é amigo, ainda não tem projeto aqui, quando tiver eu aviso</p>
+                  <a href="#" class="stretched-link">Ver no </a>
+
                 </div>
               </div>
             </div>
@@ -121,11 +137,12 @@
 
              <div class="col">
               <div class="card">
-                 <svg class="bd-placeholder-img square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                 <img src="imgs/xep.png" class="card-img-model">
 
                 <div class="card-body">
-                  <h5 class="card-title">Sem projeto</h5>
-                  <p class="card-text">Pois é amigo, ainda não tem projeto aqui, quando tiver eu aviso</p>
+                  <h5 class="card-title">XeP</h5>
+                  <p class="card-text">Site mais moderno pra torneios de xadrez, que perimte a criação de... </p>
+                  <a href="https://github.com/OniHexx0ff/XePSite" class="stretched-link">Ver no Github</a>
                </div>
             </div>
           </div>
@@ -136,10 +153,10 @@
     
 
 
-       <!-- projetos -->
-      <div id='sobre'>
+       <!-- Sobre -->
+      <div class="marg" id='sobre'>
         <h2 class="featurette-heading">Sobre mim</h2>
-        <p  class="lead">Francis Astrada Kaster, 20 anos, quase formado <del>agradecimentos especiais às greves e a Covid-19</del> em eletrônica pelo IFSUL Pelotas, estudante da UFPEL no curso de Engenharia Eletrônica, tenho um gato que se chama Apollo e sou arbitro de xadrez(certificado pela CBX).
+        <p  class="lead">Francis Astrada Kaster, 20 anos, quase formado <del>agradecimentos especiais às greves e a Covid-19</del> em eletrônica pelo IFSUL Pelotas, estudante da UFPEL no curso de Engenharia Eletrônica, tenho um gato que se chama Apollo e sou arbitro de xadrez.
          </p>
 
          <ul>
@@ -150,7 +167,13 @@
           <li>
             <p class="lead "> <p class="lead ">Manjo de HTML, Css, Javascript;
             </p>
-          </li> <li>
+          </li>
+          <li>
+            <p class="lead "> <p class="lead ">Manjo também de versionamento de código com Git, GitHub <del>até por que isso aqui é um GitHub Page</del> e testes com Python;
+            </p>
+          </li>
+
+           <li>
             <p class="lead "> <p class="lead ">Manjei, mas faz tempo que não mexo com C, Delphi <del>ainda se via isso no IFSUL quando eu estudei</del>;
             </p>
           </li>
@@ -160,7 +183,16 @@
           </li>
          </ul>
        </div>
-     </div>
+       <!-- Sobre -->
+       <!-- Contato -->
+      <div class="marg" id='contato'>
+        <h2 class="featurette-heading">Contato</h2>
+        <p  class="lead">Pra entrar em contato, só mandar um email -> <a href= "mailto:franciskaster@yahoo.com?subject=Contato" >Clicando aqui</a>
+         </p>
+         <p class="lead">Ou se quiser, o email é esse: <mark> franciskaster@yahoo.com </mark> </p>
+        </div>
+      </div>
+      <!-- Contato -->
 
 
    
