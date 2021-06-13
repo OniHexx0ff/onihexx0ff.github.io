@@ -14,27 +14,35 @@
 
     <!-- Favicons -->
 
-<meta name="theme-color" content="#7952b3">
+<meta name="theme-color" content="#273036">
 
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    
       #first{
       	margin-top: 50px;
       }
+      #wellcome{
+        margin-top: ;
+        margin-bottom: 100px;
+      }
+      #projectsRow{
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
     
+      .bg-dark{
+        background-color: #273036 !important; 
+      }
+      .markB{
+        background-color: rgba(0,0,255,0.5) !important;
+      }
+       .markY{
+        background-color: rgba(255,255,0,0.5) !important;
+      }
+      .project{
+        height: 200px;
+      }
     </style>
 
     
@@ -45,18 +53,22 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">XX</a>
+      <a class="navbar-brand" href="#">Início</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+           <li class="nav-item">
+            <a class="nav-link " href="#projetos">Projetos</a>
+           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">XX</a>
+            <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">XX</a>
+            <a class="nav-link " href="#contato">Contato</a>
           </li>
+          
          
         </ul>
     
@@ -69,60 +81,100 @@
 
   
 
+    <!--Inicio da onda -->
 
-    <hr  class="featurette-divider">
-
-    <div data-spy="scroll" id="first" class="container ">
-      <div  class="jumbotron">
-        <h2 class="featurette-heading ">Lorem ipsum dolor sit amet. <span class="text-muted">consectetur adipiscing elit.</span></h2>
-        <p class="lead ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget justo lobortis, auctor justo et, commodo mauris. Suspendisse et elementum purus. Aenean tincidunt tortor sed luctus accumsan. Nunc varius auctor aliquet. Fusce orci ante, porta nec felis ut, vestibulum pulvinar magna. Cras sagittis elit quis purus lobortis, in porta neque condimentum. Vestibulum id sagittis nisi, quis sagittis erat. Proin egestas commodo arcu eget gravida. Aenean eu pharetra ex. In in ultrices tortor, ut dignissim nisl. Etiam fringilla purus cursus nisi luctus finibus. Phasellus nec enim eleifend mauris tempor mattis ac at leo. </p>
-      </div>
-     
-      </div>
+    <div id='first' class="fluid">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,96L26.7,96C53.3,96,107,96,160,117.3C213.3,139,267,181,320,208C373.3,235,427,245,480,224C533.3,203,587,149,640,133.3C693.3,117,747,139,800,149.3C853.3,160,907,160,960,133.3C1013.3,107,1067,53,1120,32C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
     </div>
+     <!--Fim da onda -->
 
+   
+    <div  class="container ">
+       <!-- projetos -->
+      <div id="projetos">
+        <h2 class="featurette-heading ">Bem vindo ao meu github page<span class="text-muted"> aqui tem alguns dos meus projetos</span></h2>
+          <!-- projetos Row -->
+          <div id="projectsRow" class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+              <div class="card">
+                 <svg class="bd-placeholder-img square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+                <div class="card-body">
+                  <h5 class="card-title">Sem projeto</h5>
+                  <p class="card-text">Pois é amigo, ainda não tem projeto aqui, quando tiver eu aviso</p>
+                </div>
+              </div>
+            </div> 
+
+             <div class="col">
+              <div class="card">
+                 <svg class="bd-placeholder-img square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+                <div class="card-body">
+                 <h5 class="card-title">Sem projeto</h5>
+                  <p class="card-text">Pois é amigo, ainda não tem projeto aqui, quando tiver eu aviso</p>
+                </div>
+              </div>
+            </div>
+
+
+             <div class="col">
+              <div class="card">
+                 <svg class="bd-placeholder-img square"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+                <div class="card-body">
+                  <h5 class="card-title">Sem projeto</h5>
+                  <p class="card-text">Pois é amigo, ainda não tem projeto aqui, quando tiver eu aviso</p>
+               </div>
+            </div>
+          </div>
+
+        </div> <!-- projetos row -->
+     </div><!-- projetos -->
+
+    
+
+
+       <!-- projetos -->
+      <div id='sobre'>
+        <h2 class="featurette-heading">Sobre mim</h2>
+        <p  class="lead">Francis Astrada Kaster, 20 anos, quase formado <del>agradecimentos especiais às greves e a Covid-19</del> em eletrônica pelo IFSUL Pelotas, estudante da UFPEL no curso de Engenharia Eletrônica, tenho um gato que se chama Apollo e sou arbitro de xadrez(certificado pela CBX).
+         </p>
+
+         <ul>
+          <li>
+            <p class="lead ">Gosto de programar em <strong class="markB">Pyt</strong><strong class="markY">hon</strong> -> principalmente com Django;
+            </p>
+          </li>
+          <li>
+            <p class="lead "> <p class="lead ">Manjo de HTML, Css, Javascript;
+            </p>
+          </li> <li>
+            <p class="lead "> <p class="lead ">Manjei, mas faz tempo que não mexo com C, Delphi <del>ainda se via isso no IFSUL quando eu estudei</del>;
+            </p>
+          </li>
+          <li>
+            <p class="lead ">Faço umas automações residenciais malucas com Esp32 atuando como servidor;
+            </p>
+          </li>
+         </ul>
+       </div>
+     </div>
+
+
+   
+
+
+
+
+
+   <!--Inicio da onda -->
+    
+    <div id='first' class="fluid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,96L26.7,96C53.3,96,107,96,160,117.3C213.3,139,267,181,320,208C373.3,235,427,245,480,224C533.3,203,587,149,640,133.3C693.3,117,747,139,800,149.3C853.3,160,907,160,960,133.3C1013.3,107,1067,53,1120,32C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
     </div>
-
-    <hr class="featurette-divider">
-
-
-  <div  class="container marketing ">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img square" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget justo lobortis, auctor justo et, commodo mauris. Suspendisse et elementum purus. Aenean tincidunt tortor sed luctus accumsan. Nunc varius auctor aliquet. Fusce orci ante, </p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img square" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget justo lobortis, auctor justo et, commodo mauris. Suspendisse et elementum purus. Aenean tincidunt tortor sed luctus accumsan. Nunc varius auctor aliquet. Fusce orci ante, </p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4" >
-        <svg class="bd-placeholder-img square" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget justo lobortis, auctor justo et, commodo mauris. Suspendisse et elementum purus. Aenean tincidunt tortor sed luctus accumsan. Nunc varius auctor aliquet. Fusce orci ante, </p>
-        <p><a class="btn btn-secondary" href="" >View details &raquo;</a></p>
-
-
-      </div>
-
-    </div>
-
-
-
-
-  </div><!-- /.container -->
-
-
-
+     <!--Fim da onda -->
 </main>
 
 
