@@ -4,13 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
-
-    
-
     <!-- Bootstrap core CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-
 
     <!-- Favicons -->
 
@@ -26,8 +21,13 @@
         margin-bottom: 100px;
       }
       #projectsRow{
-        margin-top: 50px;
+        margin-top: 100px;
         margin-bottom: 100px;
+      }
+      #pFundo{
+        color:white;
+         margin-bottom:0px;
+         padding: 0px 0px 20px 10px;
       }
       .marg{
         margin-bottom: 50px;
@@ -65,7 +65,6 @@
     
 <header>
 
-
   
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
@@ -85,9 +84,16 @@
             <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link " href="#links">Links</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link " href="#contato">Contato</a>
           </li>
-          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://github.com/OniHexx0ff/">GitHub</a>
+          </li>
+        
          
         </ul>
     
@@ -115,7 +121,7 @@
     <div  class="container ">
        <!-- projetos -->
       <div id="projetos">
-        <h2 class="featurette-heading ">Bem vindo ao meu github page<span class="text-muted"> aqui tem alguns dos meus projetos</span></h2>
+        <h2 class="featurette-heading ">Bem vindo a minha GitHub Page<span class="text-muted"> aqui estão alguns projetos</span></h2>
           <!-- projetos Row -->
           <div id="projectsRow" class="row row-cols-1 row-cols-md-3 g-4">
 
@@ -155,17 +161,13 @@
                 </div>
               </div>
             </div>
-
-
      
 
         </div> <!-- projetos row -->
      </div><!-- projetos -->
 
-    
-
-
        <!-- Sobre -->
+        <hr>
       <div class="marg" id='sobre'>
         <h2 class="featurette-heading">Sobre mim</h2>
         <p  class="lead">Francis Astrada Kaster, 20 anos, quase formado <del>agradecimentos especiais às greves e a Covid-19</del> em eletrônica pelo IFSUL Pelotas, estudante da UFPEL no curso de Engenharia Eletrônica, tenho um gato que se chama Apollo e sou arbitro de xadrez.
@@ -196,7 +198,28 @@
          </ul>
        </div>
        <!-- Sobre -->
-       <!-- Contato -->
+
+        <!-- Links -->
+         <hr>
+      <div class="marg" id='links'>
+        <h2 class="featurette-heading">Links</h2>
+        <p  class="lead">Alguns links que podem ser úteis:
+         </p>
+             <ul>
+          <li>
+            <p class="lead "> <a href="https://www.linkedin.com/in/francis-kaster-9a6808210/">Linkedin</a>
+            </p>
+          </li>
+          <li>
+            <p class="lead "> <a href="https://hackaday.io/OniHexx0ff">Hackaday.io</a>
+            </p>
+          </li>
+          
+         </ul>
+        </div>
+
+      <!-- Contato -->
+      <hr>
       <div class="marg" id='contato'>
         <h2 class="featurette-heading">Contato</h2>
         <p  class="lead">Pra entrar em contato, só mandar um email -> <a href= "mailto:franciskaster@yahoo.com?subject=Contato" >Clicando aqui</a>
@@ -205,6 +228,12 @@
         </div>
       </div>
       <!-- Contato -->
+
+
+      </div>
+      <!-- Links -->
+
+
 
 
    
@@ -217,10 +246,13 @@
     
     <div id='first' class="fluid">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,96L26.7,96C53.3,96,107,96,160,117.3C213.3,139,267,181,320,208C373.3,235,427,245,480,224C533.3,203,587,149,640,133.3C693.3,117,747,139,800,149.3C853.3,160,907,160,960,133.3C1013.3,107,1067,53,1120,32C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+        
     </div>
      <!--Fim da onda -->
 </main>
-
+  <footer style="bg-dark">
+  <p class="bg-dark" id="pFundo" >© Copyright? Não temos!</p>
+  </footer>
 
     <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
