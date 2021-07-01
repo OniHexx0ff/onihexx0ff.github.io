@@ -8,11 +8,13 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
    <!-- Bootstrap js -->
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
     <!-- Favicons -->
+
     <link rel="icon" href="imgs/fav.png" sizes="32x32" type="image/png">
-<meta name="theme-color" content="#273036">
+  
 
 
     <style>
@@ -272,13 +274,45 @@
         <h2 class="featurette-heading">Contato</h2>
         <p  class="lead">Pra entrar em contato, só mandar um email -> <a href= "mailto:franciskaster@yahoo.com?subject=Contato" >Clicando aqui</a>
          </p>
-         <p class="lead">Ou se quiser, o email é esse: <mark> franciskaster@yahoo.com </mark> </p>
-        </div>
+         
+         <p class="lead" >Ou, se achar mais fácil, diretamente por aqui: </p>
+
+           <!-- Endpoint gerada com o excelente serviço do formspree -->
+          <form
+            action="https://formspree.io/f/mjvjoevd"
+            method="POST"
+            id="submitEmailForm">  
+              <div class="mb-3">
+                  <label for="emailArea" class="form-label">Seu email</label>
+                  <input type="email" class="form-control" id="emailArea" name="_replyto" placeholder="nome@exemplo.com">
+              </div>
+                <div class="mb-3">
+                  <label for="textArea" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="textArea" name="message" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+
+              <div class="alert alert-success alert-dismissible fade show  d-none" id="success" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+               <p class='lead text-center' id="my-form-status-success">aa</p>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show d-none" id="danger" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+               <p class='lead text-center' id="my-form-status-error">aa</p>
+              </div>
+                
+              
+                <button type="submit" class="btn btn-success ">Enviar</button>              
+           </form>
+
+            
+
       </div>
       <!-- Contato -->
 
 
-      </div>
+    </div>
       <!-- Links -->
 
 
@@ -298,12 +332,41 @@
     </div>
      <!--Fim da onda -->
 </main>
-  <footer style="bg-dark">
-  <p class="bg-dark" id="pFundo" >© Copyright? Não temos!</p>
-  </footer>
+<footer style="bg-dark">
+   <p class="bg-dark" id="pFundo" >© Copyright? Não temos!</p>
+</footer>
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-      
-  </body>
+     
+</body>
+
+
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script>
+    var form = document.getElementById("submitEmailForm");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var statusSuccess = document.getElementById("my-form-status-success");
+      var statusError = document.getElementById("my-form-status-error");
+      var dangerAlert = document.getElementById('danger');
+      var successAlert = document.getElementById('success');
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        statusSuccess.innerHTML = "Seu email foi enviado, tentarei entrar em contato o mais rápido possível!";
+        successAlert.classList.remove('d-none')
+        form.reset()
+      }).catch(error => {
+        statusError.innerHTML = "Ops, algo deu errado na hora de enviar o formulário, por favor tente novamente em instantes!"
+        dangerAlert.classList.remove('d-none')
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 </html>
