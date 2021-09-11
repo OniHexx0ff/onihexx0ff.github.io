@@ -1,0 +1,26 @@
+<!-- projetos -->
+<div  class="marg" id="projetos">
+        <h2 class="featurette-heading ">Bem vindo a minha página<span class="text-muted"> aqui estão alguns projetos</span></h2>
+          <!-- projetos Row -->
+          <div id="projectsRow" class="row row-cols-1 row-cols-md-3 g-4">
+
+
+            {% for post in site.posts %}  
+            <div class="col">
+                <div class="card" style="height:405px;">
+                  <img src="{{ post.image }}" class="card-img-model">
+
+                  <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.description |truncate: 60 }} </p>
+                    
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link" >Ver mais</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          
+     
+
+        </div> <!-- projetos row -->
+     </div><!-- projetos -->

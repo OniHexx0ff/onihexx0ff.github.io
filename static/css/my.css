@@ -1,0 +1,51 @@
+html{
+    scroll-behavior: smooth;
+    
+  }
+
+  #first{
+      margin-top: 55px;
+  }
+  #wellcome{
+    margin-bottom: 100px;
+  }
+  #projectsRow{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #pFundo{
+    color:white;
+     margin-bottom:0px;
+     padding: 0px 0px 20px 10px;
+  }
+  #footerText{
+      color:white;
+      text-align: center;
+}
+#footerText a{
+    color:white;
+    
+}
+  .marg{
+    
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+  }
+  .bg-dark{
+    background-color: #273036 !important; 
+  }
+  .project{
+    height: 200px;
+  }
+  .card-img-model{
+    height: 250px;
+    object-position: 50% 50%;
+    object-fit: cover;
+  }
+  .card:hover{
+   
+    background-color: rgba(0,0,0,0.3);
+    
+  
+  }

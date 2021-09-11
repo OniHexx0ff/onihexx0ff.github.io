@@ -1,0 +1,43 @@
+<!-- Contato -->
+      
+      <div class="marg" id='contato'>
+        
+        <p  class="lead">Pra entrar em contato, só mandar um email -> <a href= "mailto:franciskaster@yahoo.com?subject=Contato" >Clicando aqui</a>
+         </p>
+         
+         <p class="lead" >Ou, se achar mais fácil, diretamente por aqui: </p>
+
+           <!-- Endpoint gerada com o excelente serviço do formspree -->
+          <form
+            action="https://formspree.io/f/mjvjoevd"
+            method="POST"
+            id="submitEmailForm">  
+              <div class="mb-3">
+                  <label for="emailArea" class="form-label">Seu email: </label>
+                  <input type="email" class="form-control" id="emailArea" name="_replyto" placeholder="nome@exemplo.com">
+              </div>
+                <div class="mb-3">
+                  <label for="textArea" class="form-label">Mensagem: </label>
+                  <textarea class="form-control" id="textArea" name="message" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+
+              <div class="alert alert-success alert-dismissible fade show  d-none" id="success" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+               <p class='lead text-center' id="my-form-status-success">aa</p>
+              </div>
+
+              <div class="alert alert-danger alert-dismissible fade show d-none" id="danger" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+               <p class='lead text-center' id="my-form-status-error">aa</p>
+              </div>
+                
+              
+                <button type="submit" class="btn btn-success ">Enviar</button>              
+           </form>
+
+            
+
+      </div>
+      </div>
+      <!-- Contato -->

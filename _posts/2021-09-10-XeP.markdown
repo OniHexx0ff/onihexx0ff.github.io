@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "XeP"
+date:   2021-09-10 22:59:37 -0300
+categories: jekyll update
+image: "imgs/xep.png"
+description: "Site mais moderno pra torneios de xadrez, que perimte a criação de torneios, rankings, inscrições, tudo diretamente online  "
+github: "https://github.com/OniHexx0ff/XEP"
+---
+
+Ainda tenho que colocar conteúdo aqui...
+
+[Ver no GitHub][Ver-no-GitHub]
+
+[Ver-no-GitHub]: https://github.com/OniHexx0ff/XEP
+
