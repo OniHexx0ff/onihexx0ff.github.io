@@ -1,0 +1,14 @@
+name: auto-publish
+on: 
+  push:
+    branches:
+      - main
+    # "ppp" vulgo pronto para publicar
+    tags:
+      - ppp
+jobs:
+  auto-publica-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
