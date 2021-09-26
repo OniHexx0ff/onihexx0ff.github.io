@@ -1,10 +1,21 @@
-html{
-    scroll-behavior: smooth;
-    
+body{
+  scroll-behavior: smooth;
+
+
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
   }
+ footer{
+   position: absolute;
+   bottom: 0;
+   height: 20px;
+   width: 100%;
+   margin-top:200px
+ }
 
   #first{
-      margin-top: 55px;
+      margin-top: 30px;
   }
   #wellcome{
     margin-bottom: 100px;
@@ -18,11 +29,13 @@ html{
      margin-bottom:0px;
      padding: 0px 0px 20px 10px;
   }
-  #footerText{
+  .footerText{
+      margin: 0 !important;
+      
       color:white;
       text-align: center;
 }
-#footerText a{
+.footerText a{
     color:white;
     
 }

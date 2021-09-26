@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="pt-br">
 {% include head.html %}
 <body>
     
@@ -10,54 +12,22 @@
       {% include inicioOnda.html %}
 
     
-      <div class="container ">
+      <div class="container" style="height:100% background-color:red;">
        <h1>{{ page.title }} </h1>
        {{ content }}
         
       
-
+        
       </div>
 
     
-
-
-    {% include fimOnda.html %}
   </main>
 
-
-  {% include footer.html %}
 
 
      
 </body>
 
+{% include footer.html %}
 
-<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<script>
-    var form = document.getElementById("submitEmailForm");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var statusSuccess = document.getElementById("my-form-status-success");
-      var statusError = document.getElementById("my-form-status-error");
-      var dangerAlert = document.getElementById('danger');
-      var successAlert = document.getElementById('success');
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        statusSuccess.innerHTML = "Seu email foi enviado, tentarei entrar em contato o mais rápido possível!";
-        successAlert.classList.remove('d-none')
-        form.reset()
-      }).catch(error => {
-        statusError.innerHTML = "Ops, algo deu errado na hora de enviar o formulário, por favor tente novamente em instantes!"
-        dangerAlert.classList.remove('d-none')
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-</script>
 </html>

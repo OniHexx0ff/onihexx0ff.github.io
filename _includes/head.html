@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="pt-br">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +18,13 @@
 
     <link rel="icon" href="/imgs/fav.png" sizes="32x32" type="image/png">
   
-
-    <link rel="stylesheet" href="/static/css/my.css">
-    
+    {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+    <script defer type="text/javascript" src="/static/JS/{{ js_file }}.js" ></script>
+    {% endfor %}
+{% endif %}
+   
+ <link rel="stylesheet" href="/static/css/my.css">
 
     
  
