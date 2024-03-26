@@ -23,7 +23,8 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v2
       - name: Install sass
-         run: npm install -D sass
+        run: npm install -D sass
+
 
           # with:
           # path: . # The root location of your Astro project inside the repository. (optional)
