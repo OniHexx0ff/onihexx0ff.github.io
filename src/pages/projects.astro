@@ -1,177 +1,189 @@
-<!-- -&#45;&#45;-->
-<!--import type { CollectionEntry } from 'astro:content';-->
-<!--import BaseHead from '../components/BaseHead.astro';-->
-<!--import Header from '../components/Header.astro';-->
-<!--import Footer from '../components/Footer.astro';-->
-<!--import FormattedDate from '../components/FormattedDate.astro';-->
-<!--import MainSection from '../components/MainSection.vue';-->
-<!--import BlogPostPageContent from '../components/BlogPostPageContent.vue';-->
-
-<!--type Props = CollectionEntry<'blog'>['data'];-->
-
-<!--const title="Projetos";-->
-<!--const description="Lorem ipsum dolor sit amet";-->
-<!--const pubDate=new Date('March 26 2024');-->
-<!--const updatedDate = new Date('March 26 2024');-->
-<!--const heroImage= "/blog-placeholder-4.jpg";-->
-
-<!-- -&#45;&#45;-->
-
-<!--<!doctype html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <BaseHead title={title} description={description} />-->
-<!--</head>-->
-<!--<body>-->
-<!--<Header />-->
-<!--<MainSection transition:animate="slide"  >-->
-<!--    <BlogPostPageContent client:load >-->
+ ---
+ import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import MainSection from '../components/MainSection.vue';
+import BlogPostPageContent from '../components/BlogPostPageContent.vue';
+import solyd from '../assets/solyd.png';
+import pentester from '../assets/pentester_pro.png';
+import hardware from '../assets/hardware.png';
+import wireless from '../assets/wireless.png';
+import pack from '../assets/pack.png';
+import cyberpunk from '../assets/cyberpunk.png';
+import mindz from '../assets/mindz.png';
+import custom from '../assets/custom.png';
 
 
 
+type Props = CollectionEntry<'blog'>['data'];
 
-<!--        <div class="prose">-->
-<!--            <div class="title">-->
-
-<!--                <h1>{title}</h1>-->
-<!--                <hr />-->
-<!--            </div>-->
-
-<!--            <p>-->
-<!--                Aqui estão alguns dos projetos que participei ou desenvolvi.-->
-<!--                Separei eles em algumas categorias para facilitar a visualização.-->
-<!--            </p>-->
+const title="Projetos";
+const description="Lorem ipsum dolor sit amet";
+const pubDate=new Date('March 26 2024');
+const updatedDate = new Date('March 26 2024');
+const heroImage= "/blog-placeholder-4.jpg";
 
 
-<!--            <div style="">-->
-<!--                <h4 style="margin-top: 4rem; margin-bottom: 4rem">Páginas web</h4>-->
-<!--                <ul>-->
-<!--                    <li>-->
-<!--                        <a href="https://solyd.com.br">-->
-<!--                            <img src="./solyd.png">-->
-<!--                            <p>Solyd</p>-->
-<!--                        </a>-->
+ ---
 
-<!--                    </li>-->
-
-<!--                    <li>-->
-<!--                        <a href="https://solyd.com.br/cursos/pentest-do-zero-ao-profissional-v2024/">-->
-<!--                            <img src="./pentester_pro.png">-->
-<!--                            <p>Pentest profissional</p>-->
-<!--                        </a>-->
-
-<!--                    </li>-->
-
-<!--                    <li class="">-->
-<!--                        <a href="https://solyd.com.br/cursos/hardware-hacking/">-->
-<!--                            <img src="./hardware.png">-->
-<!--                            <p>Hardware Hacking</p>-->
-<!--                        </a>-->
-
-<!--                    </li>-->
-
-<!--                    <li>-->
-<!--                        <a href="https://solyd.com.br/cursos/wireless-pentester/">-->
-<!--                            <img src="./wireless.png">-->
-<!--                            <p>Wireless pentester</p>-->
-<!--                        </a>-->
-
-<!--                    </li>-->
+<!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={title} description={description} />
+</head>
+<body>
+<Header />
+<MainSection transition:animate="slide"  >
+    <BlogPostPageContent client:load >
 
 
-<!--                    <li>-->
-<!--                        <a href="https://solyd.com.br/cursos/sycp-sywp-syh2/bundle/">-->
-<!--                            <img src="./pack.png">-->
-<!--                            <p>Super Pack Solyd</p>-->
-<!--                        </a>-->
-
-<!--                    </li>-->
-
-<!--                    <li>-->
-<!--                        <a href="https://solyd.com.br/p/cyberpunk/">-->
-<!--                            <img src="./cyberpunk.png">-->
-<!--                            <p>Cyberpunk Guide</p>-->
-<!--                        </a>-->
-
-<!--                    </li>-->
-
-<!--                    <li>-->
-<!--                        <a href="https://mindz.com.br">-->
-<!--                            <img src="./mindz.png">-->
-<!--                            <p>Mindz </p>-->
-<!--                        </a>-->
-<!--                    </li>-->
-
-<!--                    <li>-->
-<!--                        <a href="https://docs.mindz.com.br/pt-br/article/conhecendo-o-mindz-custom-1uf0ihr/">-->
-<!--                            <img src="./solyd.png">-->
-<!--                            <p>Mindz Custom</p>-->
-<!--                        </a>-->
-
-<!--                    </li>-->
-
-<!--                </ul>-->
-
-<!--            </div>-->
-
-<!--        </div>-->
 
 
-<!--    </BlogPostPageContent>-->
-<!--</MainSection>-->
-<!--<Footer />-->
+        <div class="prose">
+            <div class="title">
+
+                <h1>{title}</h1>
+                <hr />
+            </div>
+
+            <p>
+                Aqui estão alguns dos projetos que participei ou desenvolvi.
+                Separei eles em algumas categorias para facilitar a visualização.
+            </p>
 
 
-<!--<style lang="scss">-->
-<!--    h2, h3{-->
-<!--        text-align: center;-->
-<!--    }-->
+            <div style="">
+                <h4 style="margin-top: 4rem; margin-bottom: 4rem">Páginas web</h4>
+                <ul>
+                    <li>
+                        <a href="https://solyd.com.br">
+                            <Image src={solyd}  alt="Solyd webpage"  />
+                            <p>Solyd</p>
+                        </a>
 
-<!--    a{-->
-<!--        text-decoration: none;-->
-<!--        color: black;-->
-<!--    }-->
+                    </li>
 
-<!--    ul{-->
-<!--        display: grid;-->
-<!--        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));-->
-<!--        justify-items: center;-->
-<!--        gap: 1rem;-->
-<!--        list-style: none;-->
-<!--        padding: 0;-->
-<!--        flex-wrap: wrap;-->
-<!--      li{-->
-<!--        margin-bottom: 3rem;-->
-<!--        max-width: 600px;-->
-<!--        width: 100%;-->
-<!--        //height: 100%;-->
-<!--        display: flex;-->
-<!--        justify-items: center;-->
-<!--        align-items: center;-->
+                    <li>
+                        <a href="https://solyd.com.br/cursos/pentest-do-zero-ao-profissional-v2024/">
+                            <Image src={pentester}  alt="Pentest Profissional webpage"  />
+                            <p>Pentest profissional</p>
+                        </a>
 
-<!--        a{-->
-<!--          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);-->
-<!--          border-radius: 10px;-->
-<!--          height: 100%;-->
-<!--          display: block;-->
+                    </li>
 
-<!--          p{-->
-<!--            text-align: center;-->
-<!--            padding: .25rem;-->
-<!--            margin: 0;-->
-<!--            //font-size: 1.5em;-->
+                    <li class="">
+                        <a href="https://solyd.com.br/cursos/hardware-hacking/">
+                            <Image src={hardware}  alt="Hardware Hacking webpage"  />
+                            <p>Hardware Hacking</p>
+                        </a>
 
-<!--          }-->
-<!--        }-->
+                    </li>
 
-<!--        img{-->
-<!--            width: 100%;-->
-<!--            height: 200px;-->
-<!--            object-position: center;-->
-<!--            object-fit:cover;-->
-<!--        }-->
-<!--      }-->
-<!--    }-->
-<!--</style>-->
-<!--</body>-->
-<!--</html>-->
+                    <li>
+                        <a href="https://solyd.com.br/cursos/wireless-pentester/">
+                            <Image src={wireless}  alt="Solyd webpage"  />
+                            <p>Wireless pentester</p>
+                        </a>
+
+                    </li>
+
+
+                    <li>
+                        <a href="https://solyd.com.br/cursos/sycp-sywp-syh2/bundle/">
+                            <Image src={pack}  alt="Pack Solyd  webpage"  />
+                            <p>Super Pack Solyd</p>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="https://solyd.com.br/p/cyberpunk/">
+                            <Image src={cyberpunk}  alt="Cyberpunk guide webpage"  />
+                            <p>Cyberpunk Guide</p>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="https://mindz.com.br">
+                            <Image src={mindz}  alt="Mindz webpage"  />
+                            <p>Mindz </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://docs.mindz.com.br/pt-br/article/conhecendo-o-mindz-custom-1uf0ihr/">
+                            <Image src={custom}  alt="Mindz custom webpage"  />
+                            <p>Mindz Custom</p>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </BlogPostPageContent>
+</MainSection>
+<Footer />
+
+
+<style lang="scss">
+    h2, h3{
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        justify-items: center;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+      li{
+        margin-bottom: 3rem;
+        max-width: 600px;
+        width: 100%;
+        //height: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+        a{
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          border-radius: 10px;
+          height: 100%;
+          display: block;
+
+          p{
+            text-align: center;
+            padding: .25rem;
+            margin: 0;
+            //font-size: 1.5em;
+
+          }
+        }
+
+        img{
+            width: 100%;
+            height: 200px;
+            object-position: center;
+            object-fit:cover;
+        }
+      }
+    }
+</style>
+</body>
+</html>

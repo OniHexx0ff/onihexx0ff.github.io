@@ -8,5 +8,6 @@ import vue from "@astrojs/vue";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://kstr.tech',
+
   integrations: [mdx(), sitemap(), vue()]
 });
