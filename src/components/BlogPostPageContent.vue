@@ -29,8 +29,8 @@ article{
   box-shadow: var(--box-shadow);
 }
 .prose {
-  width: 720px;
-  max-width: calc(100% - 2em);
+  width: 960px;
+  max-width: calc(100% - 1em);
   margin: auto;
   padding: 1em;
   color: rgb(var(--gray-dark));
@@ -52,7 +52,7 @@ article{
   font-style: italic;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
 
   h1{
     font-size: 2em;

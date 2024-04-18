@@ -1,19 +1,69 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import MainSection from '../components/MainSection.vue';
+import BlogPostPageContent from '../components/BlogPostPageContent.vue';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const title="Sobre mim";
+const description="Lorem ipsum dolor sit amet";
+const pubDate=new Date('March 26 2024');
+const updatedDate = new Date('March 26 2024');
+const heroImage= "/blog-placeholder-4.jpg";
+
 ---
 
-<Layout
-	title="Sobre mim"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('March 26 2024')}
-	heroImage="/blog-placeholder-4.jpg"
->
-	<p>
-		Meu nome é Francis, sou um desenvolvedor FullStack. Atualmente trabalho com Django e VueJS.
-        Além disso, estou cursando Engenharia Eletrônica na Universidade Federal de Pelotas, tendo experiência em linguagem C.
-	</p>
+<!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={title} description={description} />
+</head>
+<body>
+<Header />
+<MainSection transition:animate="slide"  >
+    <BlogPostPageContent client:load >
 
-    <p>
-        Tenho vários projetos feitos, nem todos voltados para programação web, mas sim para programação de microcontroladores e sistemas embarcados.
-    </p>
-</Layout>
+
+
+        <div class="prose">
+            <div class="title">
+
+                <h1>{title}</h1>
+                <hr />
+            </div>
+
+            <p>
+                Meu nome é Francis, sou um desenvolvedor FullStack. Atualmente trabalho com Django e VueJS.
+                Além disso, estou cursando Engenharia Eletrônica na Universidade Federal de Pelotas, tendo experiência em linguagem C.
+            </p>
+
+            <p>
+                Tenho vários projetos feitos, nem todos voltados para programação web, mas sim para programação de microcontroladores e sistemas embarcados.
+            </p>
+
+
+        </div>
+
+
+    </BlogPostPageContent>
+</MainSection>
+<Footer />
+
+
+<style lang="scss">
+    h2, h3{
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
+</body>
+</html>

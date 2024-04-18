@@ -56,7 +56,7 @@ body {
 
 }
 main {
-	width: 720px;
+	width: 960px;
 	max-width: 100%;
 	margin: auto;
 	overflow: hidden;
@@ -147,7 +147,7 @@ hr {
 	}
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
 	body {
 		font-size: 18px;
 	}

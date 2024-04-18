@@ -68,7 +68,7 @@ ul li a:hover .date {
 ul a:hover img {
   box-shadow: var(--box-shadow);
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
 
   .content {
     width: 100%;
